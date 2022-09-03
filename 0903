@@ -1,0 +1,151 @@
+# 야구 게임 만들기
+# import random
+#
+# answer = []
+# while len(answer) < 3:
+#     number = random.randint(0,9)
+#     if number not in answer:
+#         answer.append(number)
+#         print(answer)
+#
+#
+#
+# cnt = 10
+# foul = 0
+# ball = 0
+# strike = 0
+# # 게임 실행
+# while True:
+#     print("남은 기회", cnt)
+#     x,b,c= input("숫자 3개를 입력하세요:").split()
+#     x = int(x)
+#     b =  int(b)
+#     c = int(c)
+#     a = [x, b, c]
+#     for i in range(0,3):
+#         if a[i] in answer:
+#             if a[i] == answer[i]:
+#                 strike += 1
+#             else:
+#                 ball += 1
+#     print("ball =", ball)
+#     print("strike =", strike)
+#     if strike == 0 and ball == 0:
+#         print("foul")
+#     cnt -= 1
+#     if cnt == 0:
+#         print("정답은",answer,"입니다.")
+#         exit()
+#     if strike == 3:
+#         exit()
+
+
+
+
+
+# ----------------------------------------------
+# 복습하기
+# int(정수) -2,-1,0,1,2,3
+# float(실수) -2,12, -1.132 , 1.2, 2.0
+
+
+# ----------------------------------------------
+# a = 11 /2  # X와 Y의 몫
+# b = 11 //2 # X와 Y의 정수로 내림한 몫
+# print("a =  %f, b = %d" %(a,b))
+
+
+# ----------------------------------------------
+# a = 3
+# b = 4
+# c = a + b
+# d = a - b
+# 절댓값 = 부호를 제거한 값
+# print(abs(c))
+# print(abs(d))
+
+
+# ----------------------------------------------
+# a = 3
+# b = 4
+#
+# # 제곱(power)
+#
+# print(f"a = {a}, pow(a,2) = {pow(a, 2)}")
+# print(f"b = {b}, b ** 2 = {b ** 2}")
+
+
+
+# ----------------------------------------------
+# index 번호 활용
+# a = "Hello world"
+# 인덱싱
+# print(a[0])
+# 슬라이싱
+# print(a[6:]) -> world
+# print(a[3:]) -> Hel #[시작인덱스:끝인덱스 +1]
+# print(a[::3]) -> Hlwl [시작인덱스:끝인덱스 +1: step] step은 index를 얼만큼 증가 시킬것이냐
+# print(a[::1]) -> dlrow olleH  [::-1] 처음부터 끝까지 역순으로 보겠다.
+
+
+
+# ----------------------------------------------
+# 문자열 자료형 연산
+# a = "Hello"
+# b = "world"
+# 문자열 +문자열
+# print(a + ' '+b) #'Hello world'
+# print((a + ' ' + b + ' ')* 4)  #'Hello world Hello world Hello world Hello world'
+
+
+
+# ----------------------------------------------
+# 문자열의 길이 반환
+# a = "Hello"
+# print(len(a))
+
+
+
+# ----------------------------------------------
+# 문자열은 수정 불가
+# a = 'Hello Python'
+# print(a.count('o'))#해당 문자가 몇개 존재하는지를 반환
+# print(a.find('l'))# l이라는 문자가 처음 나오는 인덱스 번호 반환 단, 없는 문자응 찾을 경우 -1 반환
+# print(a.index('l'))# l이라는 문자가 처음 나오는 인덱스 번호 반환 단, 없는 문자를 찾는 경우 에러 발생
+# print(a.replace('py','my'))# old문자를 new문자로 바꾸어준다.
+# print(a.split())#괄호 안에 있는 문자를 기준으로 문자열을 나누어준다.단 괄호안에 아무것도 쓰지 않을 경우 공백을 기준으로 나누어준다.
+# print(a.upper())#소문자를 대문자로
+# print(a.lower())# 대문자를 소문자로
+# print(','.join(a)) #인덱스 번호 사이사이에 해당 문자를 집어넣어준다.
+# print(a.capitalize())#0번째 문자가 대문자로 변경된다.
+# print(a.startswith('el')) #해당 문자로 시작하는지를 물어본다. True/False
+# print(a.endswith('ton')) # 해당 문자로 끝나는지를 물어본다. True/ False
+# print(a.is~)# is로 시작하는 함수들은 물어보는 함수 = True/ False를 반환
+# print(a.isalnum()) # a라는 문자가 알파벳 또는 숫자인지를 물어본다.
+# a = '123'
+# print(a.sort()) #정렬
+# print(a.isalpha()) # a라는 문자가 알파벳인지를 물어본다.
+# print(a.isdigit()) #a 라는 문자가 숫자로 이루어져 있는지 물어본다.
+# a = "HELLO PYTHON"
+# b = '....str.ip.......'
+#
+# print(b.lstrip("."))
+# print(b.strip("."))  # 괄호안에 있는 기준 문자열을 변수b에서 연속되는 동안 지워준다.
+# print(b.rstrip("."))
+
+
+
+# ------------------------------------------------------------
+# name = "신찬희"
+# age = 14
+# height = 166.6
+# weight = 59
+# # 출력 결과 = 이름 : 신찬희 나이: 14 키 : 166.6
+# #  %- formating s = str(문자열) d = degree(정수, 10진수)
+# print("이름 : %s 나이 : %d 키 : %.1f" %(name, age, height))
+# # format 메서드
+# print("이름 : {} 나이 : {} 키 : {}".format(name, age, height, weight))
+# # f-string
+# print(f"이름 : {name} 나이 : {age} 키 : {height}")
+
+
